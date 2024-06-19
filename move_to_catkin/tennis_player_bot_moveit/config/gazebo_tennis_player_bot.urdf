@@ -1,0 +1,281 @@
+<?xml version="1.0" ?>
+<robot name="tennis_player_bot">
+    <material name="silver">
+        <color rgba="0.700 0.700 0.700 1.000" />
+    </material>
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.0032512986429543357 0.00020816639070417385 0.020789507513805882" rpy="0 0 0" />
+            <mass value="1.745901748133326" />
+            <inertia ixx="0.0011956848580423891" iyy="0.0011467821826484145" izz="0.0018948839982281653" ixy="-1.3515159114245922e-05" iyz="3.408751819674677e-06" ixz="-1.3187187417668591e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link11">
+        <inertial>
+            <origin xyz="-0.0007496042612608893 -0.0003450000512975077 0.0506780692966114" rpy="0 0 0" />
+            <mass value="2.466802512638024" />
+            <inertia ixx="0.0040481047604247755" iyy="0.0032971733819744525" izz="0.0018405145912772296" ixy="0.00012848963394801227" iyz="2.5695094292537527e-05" ixz="1.810660767914327e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.004 -0.0 -0.0415" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link11.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="-0.004 -0.0 -0.0415" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link11.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link21">
+        <inertial>
+            <origin xyz="-0.05274635772139816 0.36565424086879056 0.07219767724014502" rpy="0 0 0" />
+            <mass value="4.18904362063526" />
+            <inertia ixx="0.23849012204239617" iyy="0.022147013255569364" izz="0.23943346179668612" ixy="0.04725189342993831" iyz="-0.045150824234903075" ixz="0.009432202370029365" />
+        </inertial>
+        <visual>
+            <origin xyz="-0.023044 -0.003201 -0.110417" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="-0.023044 -0.003201 -0.110417" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link31">
+        <inertial>
+            <origin xyz="0.037676355295301237 -0.3790942096583749 0.09993796143896319" rpy="0 0 0" />
+            <mass value="4.1731758749862395" />
+            <inertia ixx="0.268564329913324" iyy="0.02624821743989647" izz="0.2565863142198408" ixy="0.037776002486565104" iyz="0.06591173346759693" ixz="-0.010020545727296395" />
+        </inertial>
+        <visual>
+            <origin xyz="0.101203 -0.542968 -0.218674" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link31.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="0.101203 -0.542968 -0.218674" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link31.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link41">
+        <inertial>
+            <origin xyz="0.00471564668433672 -0.02732509003557252 0.007657759398025155" rpy="0 0 0" />
+            <mass value="1.0430025260758924" />
+            <inertia ixx="0.0012605823289593698" iyy="0.0008177564199379483" izz="0.001125109998628332" ixy="7.541579629199643e-05" iyz="9.667262457412756e-05" ixz="-2.8476751138858947e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0.02881 0.057138 -0.377644" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link41.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="0.02881 0.057138 -0.377644" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link41.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link51">
+        <inertial>
+            <origin xyz="-0.004527161069972353 -0.07570016570955497 -0.013329447088193724" rpy="0 0 0" />
+            <mass value="0.5913059427072911" />
+            <inertia ixx="0.0004863955743631687" iyy="0.00028340326725498355" izz="0.0005545748428425479" ixy="-6.976199802226531e-06" iyz="8.034607593396942e-05" ixz="6.246198123573653e-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0.015274 0.117131 -0.427156" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link51.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="0.015274 0.117131 -0.427156" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link51.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link61">
+        <inertial>
+            <origin xyz="0.026167147591899243 -0.0049238598741725426 -0.15456446509579097" rpy="0 0 0" />
+            <mass value="3.2230966737650197" />
+            <inertia ixx="0.0215123931155069" iyy="0.02450343937986313" izz="0.0033008247029437388" ixy="0.00010779727936325104" iyz="-0.00048659607540865735" ixz="-0.0008396729745024298" />
+        </inertial>
+        <visual>
+            <origin xyz="0.052299 0.216045 -0.422105" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link61.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="0.052299 0.216045 -0.422105" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/link61.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="paddle_center1">
+        <inertial>
+            <origin xyz="0.00010667337392668633 0.0024966191096613133 -6.119353965117202e-05" rpy="0 0 0" />
+            <mass value="0.027744190122014827" />
+            <inertia ixx="1.6211466780931098e-06" iyy="3.1175767253304332e-06" izz="1.619320166204542e-06" ixy="6.403982343001309e-08" iyz="-3.6916867814876936e-08" ixz="-1.5769769806943564e-09" />
+        </inertial>
+        <visual>
+            <origin xyz="0.029682 0.228834 -0.196078" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/paddle_center1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+            <material />
+        </visual>
+        <collision>
+            <origin xyz="0.029682 0.228834 -0.196078" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://tennis_player_bot/meshes/paddle_center1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint0" type="continuous">
+        <origin xyz="0.004 0.0 0.0415" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="link11" />
+        <axis xyz="-0.0 0.0 1.0" />
+    </joint>
+    <transmission name="joint0_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint0">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint0_actr">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <joint name="joint1" type="continuous">
+        <origin xyz="0.019044 0.003201 0.068917" rpy="0 0 0" />
+        <parent link="link11" />
+        <child link="link21" />
+        <axis xyz="0.985635 0.168891 0.0" />
+    </joint>
+    <transmission name="joint1_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint1_actr">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <joint name="joint2" type="continuous">
+        <origin xyz="-0.124247 0.539767 0.108257" rpy="0 0 0" />
+        <parent link="link21" />
+        <child link="link31" />
+        <axis xyz="-0.985635 -0.168891 -0.0" />
+    </joint>
+    <transmission name="joint2_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint2">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint2_actr">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <joint name="joint3" type="continuous">
+        <origin xyz="0.072393 -0.600106 0.15897" rpy="0 0 0" />
+        <parent link="link31" />
+        <child link="link41" />
+        <axis xyz="0.163324 -0.953144 0.254642" />
+    </joint>
+    <transmission name="joint3_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint3">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint3_actr">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <joint name="joint4" type="continuous">
+        <origin xyz="0.013536 -0.059993 0.049512" rpy="0 0 0" />
+        <parent link="link41" />
+        <child link="link51" />
+        <axis xyz="-0.054839 -0.266479 -0.962279" />
+    </joint>
+    <transmission name="joint4_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint4">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint4_actr">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <joint name="joint5" type="continuous">
+        <origin xyz="-0.037025 -0.098914 -0.005051" rpy="0 0 0" />
+        <parent link="link51" />
+        <child link="link61" />
+        <axis xyz="0.99804 -0.043736 -0.044766" />
+    </joint>
+    <transmission name="joint5_tran">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint5">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint5_actr">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <joint name="Rigid_9" type="fixed">
+        <origin xyz="0.022617 -0.012789 -0.226027" rpy="0 0 0" />
+        <parent link="link61" />
+        <child link="paddle_center1" />
+    </joint>
+    <gazebo>
+        <plugin name="gazebo_ros_control">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
+

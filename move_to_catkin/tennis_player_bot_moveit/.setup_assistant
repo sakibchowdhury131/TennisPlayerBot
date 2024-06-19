@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: tennis_player_bot
+    relative_path: urdf/tennis_player_bot.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/tennis_player_bot.srdf
+  CONFIG:
+    author_name: sakib
+    author_email: sakibchowdhury131@gmail.com
+    generated_timestamp: 1718313870

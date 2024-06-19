@@ -1,0 +1,25 @@
+controller_list:
+  - name: fake_full_bot_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint0
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+  - name: fake_arm_group_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint0
+      - joint1
+      - joint2
+  - name: fake_paddle_group_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint3
+      - joint4
+      - joint5
+initial:  # Define initial robot poses per group
+  - group: full_bot
+    pose: ready_to_play_pose

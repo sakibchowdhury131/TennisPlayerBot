@@ -1,0 +1,507 @@
+<?xml version="0.0" ?>
+<robot name="j2s6s300">
+	<link name="world">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.00000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+	</link>
+	<link name="root">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="1.00000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+	</link>
+	<link name="j2s6s300_link_base">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.12550"/>
+			<mass value="0.46784"/>
+			<inertia ixx="0.00134" ixy="0" ixz="0" iyy="0.00134" iyz="0" izz="0.00061"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/base.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_1_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/base.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_1">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.00200 -0.06050"/>
+			<mass value="0.74770"/>
+			<inertia ixx="0.00220" ixy="0" ixz="0" iyy="0.00220" iyz="0" izz="0.00098"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/shoulder.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_2_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/ring_big.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_2_1">
+				<color rgba="1.00000 1.00000 1.00000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/shoulder.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_2">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.20650 -0.01000"/>
+			<mass value="0.99000"/>
+			<inertia ixx="0.02070" ixy="0" ixz="0" iyy="0.00084" iyz="0" izz="0.02115"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/arm.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_3_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/ring_big.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_3_1">
+				<color rgba="1.00000 1.00000 1.00000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/arm.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_3">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.08100 -0.00860"/>
+			<mass value="0.67630"/>
+			<inertia ixx="0.00392" ixy="0" ixz="0" iyy="0.00071" iyz="0" izz="0.00409"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/forearm.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_4_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/ring_big.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_4_1">
+				<color rgba="1.00000 1.00000 1.00000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/forearm.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_4">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00288 -0.05419"/>
+			<mass value="0.46300"/>
+			<inertia ixx="0.00105" ixy="0" ixz="0" iyy="0.00095" iyz="0" izz="0.00046"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/wrist_spherical_1.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_5_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/ring_small.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_5_1">
+				<color rgba="1.00000 1.00000 1.00000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/wrist_spherical_1.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_5">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.04972 -0.00286"/>
+			<mass value="0.46300"/>
+			<inertia ixx="0.00105" ixy="0" ixz="0" iyy="0.00046" iyz="0" izz="0.00095"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/wrist_spherical_2.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_6_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/ring_small.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_6_1">
+				<color rgba="1.00000 1.00000 1.00000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/wrist_spherical_2.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_6">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 -0.06000"/>
+			<mass value="0.99000"/>
+			<inertia ixx="0.00235" ixy="0" ixz="0" iyy="0.00213" iyz="0" izz="0.00182"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/hand_3finger.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_7_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/ring_small.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_7_1">
+				<color rgba="1.00000 1.00000 1.00000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/hand_3finger.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_end_effector">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="1.00000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+	</link>
+	<link name="j2s6s300_link_finger_1">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.02200 0.00000 0.00000"/>
+			<mass value="0.01000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_proximal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_9_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_proximal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_finger_tip_1">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.02200 0.00000 0.00000"/>
+			<mass value="0.01000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_distal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_10_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_distal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_finger_2">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.02200 0.00000 0.00000"/>
+			<mass value="0.01000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_proximal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_11_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_proximal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_finger_tip_2">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.02200 0.00000 0.00000"/>
+			<mass value="0.01000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_distal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_12_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_distal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_finger_3">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.02200 0.00000 0.00000"/>
+			<mass value="0.01000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_proximal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_13_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_proximal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="j2s6s300_link_finger_tip_3">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.02200 0.00000 0.00000"/>
+			<mass value="0.01000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_distal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_14_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="kinova_description/meshes/finger_distal.dae" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="base_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00064 -0.00957 0.00394"/>
+			<mass value="0.25973"/>
+			<inertia ixx="0.00155" ixy="0" ixz="0" iyy="0.00219" iyz="0" izz="0.00068"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="tennis_bat4/meshes/base_link.STL" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_-1_0">
+				<color rgba="0.79216 0.81961 0.93333 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="tennis_bat4/meshes/base_link.STL" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="connect_root_and_world" type="fixed">
+		<parent link="world"/>
+		<child link="root"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_base" type="fixed">
+		<parent link="root"/>
+		<child link="j2s6s300_link_base"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_1" type="continuous">
+		<parent link="j2s6s300_link_base"/>
+		<child link="j2s6s300_link_1"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="3.14159 0.00000 3.14159" xyz="0.00000 0.00000 0.15675"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_2" type="revolute">
+		<parent link="j2s6s300_link_1"/>
+		<child link="j2s6s300_link_2"/>
+		<limit effort="80.00000" lower="0.82030" upper="5.46288" velocity="0.62832"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.57080 -0.00000 3.14159" xyz="0.00000 0.00160 -0.11875"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_3" type="revolute">
+		<parent link="j2s6s300_link_2"/>
+		<child link="j2s6s300_link_3"/>
+		<limit effort="40.00000" lower="0.33161" upper="5.95157" velocity="0.62832"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="3.14159 0.00000 3.14159" xyz="0.00000 -0.41000 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_4" type="continuous">
+		<parent link="j2s6s300_link_3"/>
+		<child link="j2s6s300_link_4"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.57080 -0.00000 3.14159" xyz="0.00000 0.20730 -0.01140"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_5" type="revolute">
+		<parent link="j2s6s300_link_4"/>
+		<child link="j2s6s300_link_5"/>
+		<limit effort="20.00000" lower="0.52360" upper="5.75959" velocity="0.83776"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="1.57080 -0.00000 3.14159" xyz="0.00000 0.00000 -0.10375"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_6" type="continuous">
+		<parent link="j2s6s300_link_5"/>
+		<child link="j2s6s300_link_6"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.57080 -0.00000 3.14159" xyz="0.00000 0.10375 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_end_effector" type="fixed">
+		<parent link="j2s6s300_link_6"/>
+		<child link="j2s6s300_end_effector"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="3.14159 -0.00000 1.57080" xyz="0.00000 0.00000 -0.16000"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_finger_1" type="revolute">
+		<parent link="j2s6s300_link_6"/>
+		<child link="j2s6s300_link_finger_1"/>
+		<limit effort="2.00000" lower="0.00000" upper="1.51000" velocity="1.00000"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.70479 0.64761 1.67317" xyz="0.00279 0.03126 -0.11467"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_finger_tip_1" type="revolute">
+		<parent link="j2s6s300_link_finger_1"/>
+		<child link="j2s6s300_link_finger_tip_1"/>
+		<limit effort="2.00000" lower="0.00000" upper="2.00000" velocity="1.00000"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.04400 -0.00300 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_finger_2" type="revolute">
+		<parent link="j2s6s300_link_6"/>
+		<child link="j2s6s300_link_finger_2"/>
+		<limit effort="2.00000" lower="0.00000" upper="1.51000" velocity="1.00000"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.57080 0.64926 -1.38614" xyz="0.02226 -0.02707 -0.11482"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_finger_tip_2" type="revolute">
+		<parent link="j2s6s300_link_finger_2"/>
+		<child link="j2s6s300_link_finger_tip_2"/>
+		<limit effort="2.00000" lower="0.00000" upper="2.00000" velocity="1.00000"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.04400 -0.00300 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_finger_3" type="revolute">
+		<parent link="j2s6s300_link_6"/>
+		<child link="j2s6s300_link_finger_3"/>
+		<limit effort="2.00000" lower="0.00000" upper="1.51000" velocity="1.00000"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.57080 0.64926 -1.75545" xyz="-0.02226 -0.02707 -0.11482"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="j2s6s300_joint_finger_tip_3" type="revolute">
+		<parent link="j2s6s300_link_finger_3"/>
+		<child link="j2s6s300_link_finger_tip_3"/>
+		<limit effort="2.00000" lower="0.00000" upper="2.00000" velocity="1.00000"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.04400 -0.00300 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="joint_dummy1" type="fixed">
+		<parent link="j2s6s300_end_effector"/>
+		<child link="base_link"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.10000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+</robot>
